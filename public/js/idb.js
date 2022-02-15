@@ -1,3 +1,11 @@
+// define indexedDB
+const indexedDB =
+  window.indexedDB ||
+  window.mozIndexedDB ||
+  window.webkitIndexedDB ||
+  window.msIndexedDB ||
+  window.shimIndexedDB;
+
 // variable to hold db connection
 let db;
 // establish a connection to IndexedDB database called "budget_tracker" and set it to version 1
